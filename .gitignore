@@ -1,0 +1,36 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+application/logs/
+*.log
+
+# Cache
+application/cache/
+
+# Sensitive configuration
+application/config/database.php
+application/config/config.php
+application/config/email.php
+application/config/smtp.php
+
+# Uploaded files
+uploads/
+assets/uploads/
+assets/images/uploads/
+
+# Composer
+vendor/
+composer.lock
+
+# Environment files
+.env
+*.env
+
+# cPanel system files
+cpanel.yml
+
+# Ignore local IDE settings
+.vscode/
+.idea/
