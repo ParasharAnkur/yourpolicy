@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/yourpolicy/public_html
+    - /usr/bin/rsync -a --delete \
+      --exclude='.git/' \
+      --exclude='.gitignore' \
+      --exclude='.cpanel.yml' \
+      --exclude='application/config/database.php' \
+      --exclude='application/config/development/' \
+      ./ $DEPLOYPATH/
